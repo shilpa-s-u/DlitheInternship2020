@@ -112,4 +112,16 @@ class CampusconnectjavaApplicationTests {
 				(111112222111L,8667002959L,"Razak","Electronics","Android","Nill","IT","Not Placed","razzaksr@gmail.com",9.1,8.1,0.0,9.1);
 		assertSame(cand.getName(), cand.getName(), service.erase(cand));
 	}
+	@Test
+	public void testReadsByDepartment()
+	{
+		List<candidates> hai=new Vector<candidates>();
+		candidates cand=new candidates
+				(876788778722L,9677520692L,"Richard","Computers","Java","Nill","IT","Not Placed","razzaksr@gmail.com",9.1,8.1,0.0,9.1);
+		candidates can=new candidates
+				(111112222111L,8667002959L,"Razak","Electronics","Android","Nill","IT","Not Placed","razzaksr@gmail.com",9.1,8.1,0.0,9.1);
+		hai.add(cand);hai.add(can);
+		when(repo.getBydepartment("Computers")).thenReturn(hai);
+		assertEquals(cand,service.fetchViadepartment("Computers").get(0));
+	}
 }

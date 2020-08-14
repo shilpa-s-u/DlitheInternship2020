@@ -7,7 +7,7 @@
 <title>Search Candidates</title>
 </head>
 <body>
-<form action="fetch" method="post">
+<form action="fetch" method="POST">
 <table>
 <tr><td><input type="text" name="regno" placeholder="Enter the regno to fetch"></td></tr>
 <tr><td><select name="department">
