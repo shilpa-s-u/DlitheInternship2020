@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.13.0.final using JasperReports Library version 6.13.0-46ada4d1be8f3c5985fd0b6146f3ed44caed6f05  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="campusconnectorreport" pageWidth="1600" pageHeight="900" orientation="Landscape" columnWidth="1560" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7a5c9b49-9dc5-422a-ac69-e92cf61ef530">
+	
+	<field name="regno" class="java.lang.Long">
+		
+	</field>
+	<field name="name" class="java.lang.String">
+		
+	</field>
+	<field name="department" class="java.lang.String">
+		
+	</field>
+	<field name="cgpa" class="java.lang.Double">
+		
+	</field>
+	<field name="hsc" class="java.lang.Double">
+		
+	</field>
+	<field name="diploma" class="java.lang.Double">
+		
+	</field>
+	<field name="sslc" class="java.lang.Double">
+		
+	</field>
+	<field name="skills" class="java.lang.String">
+		
+	</field>
+	<field name="certifications" class="java.lang.String">
+		
+	</field>
+	<field name="email" class="java.lang.String">
+		
+	</field>
+	<field name="career" class="java.lang.String">
+		
+	</field>
+	<field name="status" class="java.lang.String">
+		
+	</field>
+	<field name="mobile" class="java.lang.Long">
+		
+	</field>
+	<group name="Group1">
+		<groupExpression><![CDATA[$F{regno}]]></groupExpression>
+		<groupHeader>
+			<band height="46">
+				<frame>
+					<reportElement mode="Opaque" x="2" y="22" width="1500" height="24" forecolor="#B89F7D" backcolor="#000000" uuid="f24569ed-2518-465a-a480-0c195aacd180"/>
+					<staticText>
+						<reportElement x="10" y="6" width="108" height="13" forecolor="#F2EBEB" uuid="56e6e1c4-85dc-497f-89c2-f837065210cd"/>
+						<text><![CDATA[REGISTER NUMBER]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="140" y="6" width="69" height="13" forecolor="#F2EBEB" uuid="24df6cf8-4a25-4568-ae61-618fac3f288d"/>
+						<text><![CDATA[NAME]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="540" y="10" width="70" height="13" forecolor="#F2EBEB" uuid="0c9cb3a7-267f-4473-9a5f-160b4ae3a43e"/>
+						<text><![CDATA[DIPLOMA]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="640" y="6" width="60" height="13" forecolor="#F2EBEB" uuid="2f63d5bd-457c-4015-91dd-1b94a971a99d"/>
+						<text><![CDATA[SSLC]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="720" y="6" width="90" height="13" forecolor="#F2EBEB" uuid="27640426-4ed4-4136-a287-3e11426b0091"/>
+						<text><![CDATA[SKILLS]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="840" y="6" width="108" height="13" forecolor="#F2EBEB" uuid="570859e3-6a38-4fd8-86bd-45097c540ab7"/>
+						<text><![CDATA[CERTIFICATIONS]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="980" y="6" width="108" height="13" forecolor="#F2EBEB" uuid="4e4be557-8539-4156-aa66-6084b2d54a5d"/>
+						<text><![CDATA[EMAIL]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="460" y="6" width="50" height="13" forecolor="#F2EBEB" uuid="ba39a52c-e4b0-4542-b448-74c5349b63ec"/>
+						<text><![CDATA[HSC]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="370" y="6" width="60" height="13" forecolor="#F2EBEB" uuid="7f6ea283-f16b-4cf8-a0c2-9b8ee74a6678"/>
+						<text><![CDATA[CGPA]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="230" y="6" width="108" height="13" forecolor="#F2EBEB" uuid="03b52fc9-3aa5-4b75-89cd-d4531d9ab728"/>
+						<text><![CDATA[DEPARTMENT]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="1380" y="6" width="108" height="13" forecolor="#F2EBEB" uuid="0d5f2ccf-6339-4795-8e1c-a402b54718fa"/>
+						<text><![CDATA[MOBILE]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="1250" y="2" width="108" height="13" forecolor="#F2EBEB" uuid="c9969fad-3d09-45c3-857a-ef110bfb454c"/>
+						<text><![CDATA[STATUS]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="1110" y="6" width="108" height="13" forecolor="#F2EBEB" uuid="dcc161e5-00d3-427f-b483-f811fa5832c6"/>
+						<text><![CDATA[CAREER]]></text>
+					</staticText>
+				</frame>
+				<rectangle>
+					<reportElement x="1502" y="22" width="77" height="24" backcolor="#666666" uuid="70e1e931-2edd-4f3d-b09b-b9da04709f25"/>
+					<graphicElement>
+						<pen lineWidth="0.0"/>
+					</graphicElement>
+				</rectangle>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="6"/>
+		</groupFooter>
+	</group>
+	<group name="Group2">
+		<groupExpression><![CDATA[$F{name}]]></groupExpression>
+		<groupHeader>
+			<band height="30"/>
+		</groupHeader>
+	</group>
+	<group name="department">
+		<groupExpression><![CDATA[$F{department}]]></groupExpression>
+	</group>
+	<group name="cgpa">
+		<groupExpression><![CDATA[$F{cgpa}]]></groupExpression>
+	</group>
+	<group name="hsc">
+		<groupExpression><![CDATA[$F{hsc}]]></groupExpression>
+	</group>
+	<group name="diploma">
+		<groupExpression><![CDATA[$F{diploma}]]></groupExpression>
+	</group>
+	<group name="sslc">
+		<groupExpression><![CDATA[$F{sslc}]]></groupExpression>
+	</group>
+	<group name="skills">
+		<groupExpression><![CDATA[$F{skills}]]></groupExpression>
+	</group>
+	<group name="certifications">
+		<groupExpression><![CDATA[$F{certifications}]]></groupExpression>
+	</group>
+	<group name="email">
+		<groupExpression><![CDATA[$F{email}]]></groupExpression>
+	</group>
+	<group name="career">
+		<groupExpression><![CDATA[$F{career}]]></groupExpression>
+	</group>
+	<group name="status">
+		<groupExpression><![CDATA[$F{status}]]></groupExpression>
+	</group>
+	<group name="mobile">
+		<groupExpression><![CDATA[$F{mobile}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="102" splitType="Stretch">
+			<image>
+				<reportElement x="1500" y="0" width="77" height="102" uuid="651ccc4b-e999-40fe-bcbf-1f25bcfc98af"/>
+				<imageExpression><![CDATA["cherry.jpg"]]></imageExpression>
+			</image>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="1500" height="66" backcolor="#000000" uuid="d8d9e644-3a32-491d-97cb-a277aff17133"/>
+				<staticText>
+					<reportElement style="Title" x="0" y="0" width="370" height="66" uuid="27d8f6ee-f0a9-44f6-a160-1763c3b00f30"/>
+					<box topPadding="4" leftPadding="4" bottomPadding="4" rightPadding="4"/>
+					<textElement verticalAlignment="Bottom">
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[Dlite Report]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="SubTitle" x="1180" y="40" width="316" height="29" uuid="cfa21334-0634-4605-9ea7-aca4981f67e4"/>
+					<textElement textAlignment="Right">
+						<font size="22" isBold="false"/>
+					</textElement>
+					<text><![CDATA[report of candidates]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="70" width="1500" height="32" forecolor="#000000" backcolor="#CC0000" uuid="b0c895f6-6dbd-477d-9858-9ad66af087e1"/>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement x="1340" y="12" width="144" height="20" forecolor="#FFFFFF" uuid="a33fce3b-20c1-4696-873a-fe134d1e7d88"/>
+					<textElement textAlignment="Right">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="18" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="36" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="6c2165e8-9b2e-4644-a0c9-7d1d86116183"/>
+				<textFieldExpression><![CDATA[$F{regno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1386" y="0" width="100" height="20" uuid="26fea1ef-11be-4718-9bd1-f87a3a2c8836"/>
+				<textFieldExpression><![CDATA[$F{mobile}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1252" y="0" width="100" height="20" uuid="52a21092-adce-49c6-bc4c-570fb0992380"/>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1110" y="0" width="100" height="20" uuid="96685718-1171-497c-9741-a0a85f91d852"/>
+				<textFieldExpression><![CDATA[$F{career}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="970" y="0" width="100" height="20" uuid="7c3d0230-3c85-4f3a-a2c7-3aec856bc54c"/>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="840" y="0" width="100" height="20" uuid="8c59f513-5d97-4048-b4cd-2a4ac4ffff01"/>
+				<textFieldExpression><![CDATA[$F{certifications}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="620" y="0" width="70" height="20" uuid="6b0150c3-9bfc-4647-87c2-452db6ef0112"/>
+				<textFieldExpression><![CDATA[$F{sslc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="542" y="0" width="70" height="20" uuid="355aa24b-c941-4d47-8049-be86ae998306"/>
+				<textFieldExpression><![CDATA[$F{diploma}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="454" y="0" width="58" height="20" uuid="505355a0-51d5-43bf-bfb8-57a024af57ed"/>
+				<textFieldExpression><![CDATA[$F{cgpa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="372" y="0" width="58" height="20" uuid="a695397d-37cd-44d7-98a7-be11a292434d"/>
+				<textFieldExpression><![CDATA[$F{cgpa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="0" width="110" height="20" uuid="5deceed0-5f2f-4bd3-9979-01db5685dd0c"/>
+				<textFieldExpression><![CDATA[$F{department}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="0" width="90" height="20" uuid="64420fae-901b-4e38-9b0b-3b4c1b499cef"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="717" y="0" width="70" height="20" uuid="6efef309-7086-4a6b-a5bf-f9403efbeaea"/>
+				<textFieldExpression><![CDATA[$F{skills}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="12" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1" uuid="501ac6c4-e9d4-43cb-ba6b-7f2f44394cf3"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="-4" width="1577" height="25" forecolor="#D0B48E" backcolor="#000000" uuid="ffb10ec8-0371-4545-8eaa-96d62ad3cec0"/>
+				<textField evaluationTime="Report">
+					<reportElement style="Column header" x="757" y="3" width="40" height="20" forecolor="#FFFFFF" uuid="b5521ea6-5f36-4864-856f-58d0bcd011f2"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Column header" x="677" y="3" width="80" height="20" forecolor="#FFFFFF" uuid="e625ea3c-1741-4cfe-81cf-fbbdd00162c8"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+				</textField>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement style="Column header" x="2" y="3" width="197" height="20" forecolor="#FFFFFF" uuid="0c9f7e91-d3f5-47f9-82b7-0b2b3a43a5d6"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

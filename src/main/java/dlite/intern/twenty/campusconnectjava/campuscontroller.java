@@ -1,5 +1,6 @@
 package dlite.intern.twenty.campusconnectjava;
 import java.util.List;
+import javax.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +16,7 @@ public class campuscontroller {
 @Autowired
 CampusService camp;
 List<candidates> temp;
+HttpSession session;
 @RequestMapping("/begin")
 public ModelAndView initiate()
 {
@@ -94,5 +96,20 @@ public ModelAndView reads(@RequestParam("regno") String regno,@RequestParam("dep
 		temp=camp.fetchViastatus(status);
 	}
 	return new ModelAndView("show").addObject("every", temp);
+}
+@RequestMapping("/report")
+public ModelAndView rep(@RequestParam("form") String form)
+{
+	if(session.getAttribute("user")!=null)
+	{
+		ModelAndView mod=new ModelAndView("show");
+		System.out.println("Before report calls"+temp);
+		String get=camp.generate(temp, form);
+		mod.addObject("every", temp);
+		mod.addObject("msg", get);
+		System.out.println("Done in report navigate back to show with "+temp);
+		return mod;
+	}
+	else {return new ModelAndView("index");}
 }
 }
