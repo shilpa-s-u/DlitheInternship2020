@@ -60,11 +60,11 @@ public class CampusService {
         String hai="";
 		try
 		{
-			File file = ResourceUtils.getFile("classpath:CampusReport.jrxml");
+			File file = ResourceUtils.getFile("classpath:campusconnectorreport.jrxml");
 	        JasperReport jasperReport = JasperCompileManager.compileReport(file.getAbsolutePath());
 	        JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(can);
 	        Map<String, Object> parameters = new HashMap<>();
-	        parameters.put("createdBy", "Arun Rajpurohit");
+	        parameters.put("createdBy", "Shilpa S U");
 	        parameters.put("createdFor", "DLithe Consultancy Services");
 	        System.out.println("Received @ report end before writing "+can);
 	        JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, dataSource);

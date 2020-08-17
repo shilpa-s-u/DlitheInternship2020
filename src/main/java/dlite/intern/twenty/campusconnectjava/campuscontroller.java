@@ -21,8 +21,8 @@ HttpSession session;
 public ModelAndView initiate()
 {
 	ModelAndView mod=new ModelAndView("one");
-	mod.addObject("user", "Razak Mohamed");
-	long mobile=9876545674L;
+	mod.addObject("user", "shilpa s u");
+	long mobile=9876545674l;
 	mod.addObject("mob",mobile);
 	return mod;
 }
@@ -100,8 +100,6 @@ public ModelAndView reads(@RequestParam("regno") String regno,@RequestParam("dep
 @RequestMapping("/report")
 public ModelAndView rep(@RequestParam("form") String form)
 {
-	if(session.getAttribute("user")!=null)
-	{
 		ModelAndView mod=new ModelAndView("show");
 		System.out.println("Before report calls"+temp);
 		String get=camp.generate(temp, form);
@@ -109,7 +107,6 @@ public ModelAndView rep(@RequestParam("form") String form)
 		mod.addObject("msg", get);
 		System.out.println("Done in report navigate back to show with "+temp);
 		return mod;
-	}
-	else {return new ModelAndView("index");}
+	
 }
 }

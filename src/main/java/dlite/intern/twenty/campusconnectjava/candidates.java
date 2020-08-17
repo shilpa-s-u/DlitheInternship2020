@@ -3,9 +3,6 @@ package dlite.intern.twenty.campusconnectjava;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.io.Serializable;
-
-import org.springframework.lang.Nullable;
-
 import com.sun.istack.NotNull;
 
 @Entity
